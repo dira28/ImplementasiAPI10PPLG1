@@ -1,12 +1,24 @@
 package com.example.implementasiapi10pplg1;
-
+import com.google.gson.annotations.SerializedName;
 public class Team {
+    @SerializedName("idTeam")
     private String idTeam;
-    private String strTeam;
-    private String strLogo;
 
-    public String getStrLogo() {
-        return strLogo;
+    @SerializedName("strTeam")
+    private String strTeam;
+
+    @SerializedName("strBadge")
+    private String strBadge;
+
+    @SerializedName("strDescriptionEN")
+    private String description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getStrBadge() {
+        return strBadge;
     }
 
 
